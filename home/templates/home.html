@@ -97,10 +97,11 @@
         .modal-content {
             background-color: #fefefe;
             margin: 15% auto;
-            padding: 20px;
+            padding: 5px 20px 30px 20px;
             border: 1px solid #888;
             width: 80%;
             max-width: 500px;
+            border-radius: 10px;
         }
 
         .close {
@@ -115,6 +116,18 @@
             color: black;
             text-decoration: none;
             cursor: pointer;
+        }
+        .open_modal_btn {
+            background-color: #536dfe;
+            border-radius: 3px;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            transition: .2s;
+        }
+        .open_modal_btn:hover {
+            background-color: #758AFE;
         }
     </style>
 </head>
@@ -149,7 +162,7 @@
 
         <div class="background">
             <center>
-                <button id="openModalBtn">Скопировать ссылку</button>
+                <button class="open_modal_btn" id="openModalBtn">Скопировать ссылку</button>
             </center>
         </div>
 
@@ -159,7 +172,9 @@
 
 <div id="myModal" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <div style="display: flex; flex-direction: row-reverse">
+            <span class="close">&times;</span>
+        </div>
         <p>Скопируйте ссылку ниже:</p>
         <input type="text" id="linkInput" value="https://example.com" readonly style="width: 100%; padding: 8px;">
     </div>
