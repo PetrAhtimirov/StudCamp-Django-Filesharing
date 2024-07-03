@@ -28,8 +28,8 @@ SECRET_KEY = get_random_secret_key()
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'myfile-sharing-app.herokuapp.com',
     '127.0.0.1',
+    '*',
 ]
 
 
