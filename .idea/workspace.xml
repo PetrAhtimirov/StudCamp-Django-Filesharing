@@ -12,6 +12,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "django.template.preview.state": "SHOW_EDITOR",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
